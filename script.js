@@ -46,7 +46,7 @@ $(function(){
             $('.result2').text(correct_cnt + "問連続正解!");
             $('.inputName').hide();
             $('.randPkmnName p').hide();
-            $('hint').hide();
+            $('.hint').hide();
             $('.restart form').show();
         }
         return false;
@@ -73,6 +73,7 @@ $(function(){
         $('.result2').test("");
         $('.result1').show();
         $('.result2').show();
+        $('.hint').show();
         return false;
     });
 });
