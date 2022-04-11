@@ -1,0 +1,25 @@
+.top-wrapper{
+    background-color: #80CBC4;
+    padding: 10px 0 15px 0;
+}
+
+.top-wrapper img{
+    width: 80px;
+    float: left;
+    padding: 0 30px 0 10px;
+}
+
+.top-wrapper p{
+    font-family: 'RocknRoll One', sans-serif;
+    font-size: 50px; 
+    margin: 0 0;
+}
+
+#indexToName .error{
+    color: red;
+    font-size: 10px;
+}
+
+#indexToName .inputName span{
+    font-size: 10px
+}
