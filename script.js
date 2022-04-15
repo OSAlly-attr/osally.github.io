@@ -20,9 +20,10 @@ $(function(){
     $('.restart form').hide();
     var correct_cnt = 0;
     var index = getRandomInt(649) + 1;
-    $('.randPkmnName p').text((correct_cnt+1) + "問目 :  「" + index + "」");
-    $('.hint .prev').text("前の番号のポケモン");
-    $('.hint .next').text("後の番号のポケモン");
+    $('.randPkmnName .p-number').text((correct_cnt+1) + "問目");     
+    $('.randPkmnName .question').text(index);
+    $('.hint .prev').text("前のポケモン");
+    $('.hint .next').text("後のポケモン");
 
     $('.inputName .btn-submit').click(function(){
         var name = hiraToKana($('.name').val());
@@ -38,9 +39,10 @@ $(function(){
             $('.result1').text(index + "番「" + name + "」正解!!");
             index = getRandomInt(649) + 1;
             correct_cnt++;
-            $('.randPkmnName p').text((correct_cnt+1) + "問目 :  「" + index + "」");     
-            $('.hint .prev').text("前の番号のポケモン");
-            $('.hint .next').text("後の番号のポケモン");
+            $('.randPkmnName .p-number').text((correct_cnt+1) + "問目");     
+            $('.randPkmnName .question').text(index);
+            $('.hint .prev').text("前のポケモン");
+            $('.hint .next').text("後のポケモン");
         }else{
             $('.result1').text("不正解! " + index + "番は「" + pokemons["Name"][index-1] + "」でした。\n" + name +"は「" + (pokemons["Name"].indexOf(name)+1) + "」番です。");
             $('.result2').text(correct_cnt + "問連続正解!");
