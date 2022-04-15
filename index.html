@@ -15,34 +15,32 @@
                 <img src="images/icon_pikachu.png">
                 <p>ぽけもん全国図鑑番号当てくいず!!</p>
             </div>
-            <p class="result1"></p>
-            <p class="result2"></p>
-            <div class="randPkmnName">
-                <p></p>
+            <div class="wrapper">
+                <p class="result1"> </p>
+                <p class="result2"> </p>
+                <div class="randPkmnName">
+                    <p class="p-number"></p>
+                    <p class="question"><span></span></p>
+                </div>
+                <div class="inputName">
+                    <form>
+                        <p>ポケモンの名前を入力<span>(※ひらがな入力も可)</span></p>
+                        <p class="error"> </p>
+                        <p class="test"></p>
+                        <input class="name" type="text" value="">
+                        <input type="submit" class="btn-submit" value="ENTER">
+                    </form>
+                </div>
+                <div class="hint">
+                    <button class="btn prev"></button>
+                    <button class="btn next"></button>
+                </div>
+                <div class="restart">
+                    <form>
+                        <input type="submit" class="btn-submit" value="もう一度プレイ">
+                    </form>
+                </div>
             </div>
-            <div class="inputName">
-                <form>
-                    <p>ポケモンの名前を入力<span>(※ひらがな入力も可)</span></p>
-                    <p class="error"></p>
-                    <p class="test"></p>
-                    <input class="name" type="text" value="">
-                    <input type="submit" class="btn-submit" value="ENTER">
-                </form>
-            </div>
-            <div class="hint">
-                <button class="prev"></button>
-                <button class="next"></button>
-            </div>
-            <div class="restart">
-                <form>
-                    <input type="submit" class="btn-submit" value="もう一度プレイ">
-                </form>
-                
-            </div>
-            
-        </div>
-        <div id="nameToIndex">
-
         </div>
         <script src="script.js"></script>
     </body>
