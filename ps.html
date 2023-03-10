@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>ぽけもんわーどる</title>
+        <link rel="stylesheet" href="stylesheet.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
+        <script crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> -->
+    </head>
+    <body>
+        <!-- <div id="root"></div> -->
+        <div class="top-wrapper">
+            <img src="images/icon_pikachu.png">
+            <p>ぽけもんわーどる！！</p>
+        </div>
+        
+        <div id="inputName"></div>
+
+        <script type="text/babel">
+            let dom = document.querySelector("#inputName");
+
+            class PkmnName{
+                constructor(){
+                    this.state = {
+                        name : 'クレベース'
+                    };
+                }
+                setName(event){
+                    let inputName = event.target.value;
+                    this.setState({name: inputName});
+                }
+            }
+            let named = new PkmnName();
+            let tmpName = "";
+
+            let el = (
+                <div>
+                    <p>ポケモンの名前を入力</p>
+                    <p>{ tmpName }</p>
+                    <p>{ named.state.name }</p>
+                    <form onSubmit={()=>{tmpName = "はなこ"}}>
+                        <input
+                            onChange={(event)=>{named.setName(event)}}
+                        />
+                        <input type="submit" value="ENTER" />
+                    </form>
+                    
+                </div>
+            );
+            ReactDOM.render(el, dom);
+        </script> 
+    </body>
+</html>

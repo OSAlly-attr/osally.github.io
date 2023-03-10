@@ -42,7 +42,7 @@ body {
 }
 
 .randPkmnName .question {
-  /* text-align: center; */
+  text-align: center;
   font-size: 40px;
 }
 
@@ -92,12 +92,12 @@ body {
     width: 100vw;
   }
   .top-wrapper img {
-    width: 45px;
+    width: 33px;
     padding: 0 20px 0 10px;
   }
   .top-wrapper p {
     font-family: "RocknRoll One", sans-serif;
-    font-size: 23px;
+    font-size: 18px;
     margin: 0 0;
   }
 }
